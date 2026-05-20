@@ -1,0 +1,39 @@
+=================================================================
+  FRAUD DETECTION — FINAL COMPARISON REPORT
+=================================================================
+
+Metric            Random Forest        RNN/LSTM       Winner
+------------------------------------------------------------
+Accuracy                 0.9988          0.8965 Random Forest
+Precision                1.0000          0.7964 Random Forest
+Recall                   0.9959          0.8902 Random Forest
+F1 Score                 0.9980          0.8407 Random Forest
+ROC-AUC                  1.0000          0.9629 Random Forest
+------------------------------------------------------------
+Wins                          5               0
+
+=================================================================
+  PER-MODE AUC BREAKDOWN
+=================================================================
+
+Mode                           n     RF AUC    RNN AUC       Winner
+-----------------------------------------------------------------
+MANUAL (fair)                 61        nan        nan          N/A
+AUTO (fair)                  126        nan        nan          N/A
+BIAS P1 (fraud)              157        nan        nan          N/A
+CHAOS (fair)                 369        nan        nan          N/A
+ADAPTIVE (fraud)              89        nan        nan          N/A
+
+=================================================================
+  CONCLUSION
+=================================================================
+
+Random Forest strengths:
+  - Instant training (no GPU needed)
+  - Interpretable via feature importance
+  - Best at static bias (BIAS P1 mode) where p1_5_freq is a giveaway
+
+RNN/LSTM strengths:
+  - Learns temporal patterns from raw sequences
+  - Best at dynamic fraud (ADAPTIVE mode) where bias shifts over time
+  - No manual feature engineering required

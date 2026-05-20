@@ -7,7 +7,7 @@ from datetime import datetime
 
 # CONFIGURATION — change COM_PORT to match your system
 
-COM_PORT   = "COM4"     
+COM_PORT   = "COM5"     
                         
                         
 BAUD_RATE  = 115200

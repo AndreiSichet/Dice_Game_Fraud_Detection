@@ -1,0 +1,20 @@
+=======================================================
+RNN/LSTM — FRAUD DETECTION REPORT
+=======================================================
+
+Architecture     : LSTM x2 layers, 64 hidden units
+Sequence length  : 20 rolls
+Dropout          : 0.3
+Epochs trained   : 50
+Best Val AUC     : 0.9629
+Final Test AUC   : 0.9629
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+        Fair       0.95      0.90      0.92       556
+       Fraud       0.80      0.89      0.84       246
+
+    accuracy                           0.90       802
+   macro avg       0.87      0.89      0.88       802
+weighted avg       0.90      0.90      0.90       802

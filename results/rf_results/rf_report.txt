@@ -1,0 +1,34 @@
+=======================================================
+RANDOM FOREST — FRAUD DETECTION REPORT
+=======================================================
+
+Training samples : 3208  (approx)
+Test samples     : 802
+ROC-AUC Score    : 0.9906
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+        Fair       0.96      0.97      0.97       556
+       Fraud       0.93      0.91      0.92       246
+
+    accuracy                           0.95       802
+   macro avg       0.95      0.94      0.94       802
+weighted avg       0.95      0.95      0.95       802
+
+
+FEATURE IMPORTANCE (ranked):
+  1. p1_high_freq         0.2148
+  2. p1_low_freq          0.1702
+  3. p1_mean              0.1234
+  4. p1_entropy           0.1020
+  5. p1_5_freq            0.0809
+  6. p1_std               0.0575
+  7. mean_diff            0.0569
+  8. diff_std             0.0369
+  9. p2_std               0.0353
+  10. p1_win_rate          0.0347
+  11. p1_6_freq            0.0246
+  12. p1_4_freq            0.0220
+  13. p2_mean              0.0210
+  14. p2_high_freq         0.0198
